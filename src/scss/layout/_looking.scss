@@ -1,0 +1,25 @@
+.looking {
+ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px; 
+    padding-top: 30px;
+    padding-left: 10px;
+
+}
+
+.insomnia{
+    color: #8ccbea;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boton {
+
+    border: solid 2px #f26002;
+    border-radius: 50px;
+    width: 45px;
+    height: 25px;
+    color: #f26002;
+    margin-bottom: 10px;
+}
