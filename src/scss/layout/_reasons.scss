@@ -1,20 +1,149 @@
 .reasons {
-    padding-top: 20px;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: grid;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
     background-color: #f0f8ff;
     justify-content: center;
     text-align: center;
-    height: 60vh;
     width: 100%;
-
-    @media screen and (max-width: 768px) {
-        display: grid;
-        grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
-        grid-template-rows: 40px 100px 20px;
-        
+  
     
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        
+    }
+  }
+    
+    
+
+
+.item1 {
+
+    font-family: $font-title;
+    font-weight: bold;
+    font-size: 24px;
+
+    @media screen and (min-width: 768px) {
+        grid-column: 1 / 6;
+        grid-row: 1 / 1;
+        font-size: 26px;
+        padding-top: 20px;
+          
+    }
+
+    @media screen and (min-width: 1280px){
+        font-size: 32px;
+        padding-top: 30px;
+    }
+}
+
+.item2 {
+      
+    font-family: $font-main;
+    font-size: 16px;
+    
+    p { 
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        grid-column: 2 / 3;
+        grid-row: 2/3;
+        font-size: 22px;
+      
+        
+    }
+
+    @media screen and (min-width: 1280px){
+        font-size: 32px;
+        
+    }
+}
+
+.item3 {
+
+    font-family: $font-main;
+    font-size: 16px;
+    
+
+    p { 
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    @media screen and (min-width: 768px) {
+        grid-column: 3 / 4;
+        grid-row: 2/3;
+        font-size: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+      
+    }
+
+    @media screen and (min-width: 1280px){
+        font-size: 32px;
+        
+    }
+}
+
+.item4 {
+
+    font-family: $font-main;
+    font-size: 16px;
+
+    p { 
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    
+
+    @media screen and (min-width: 768px) {
+        grid-column: 4 / 5;
+        grid-row: 2/3;
+        font-size: 22px;
+        
+        
+    }
+
+    @media screen and (min-width: 1280px){
+        font-size: 32px;
+        
+    }
+}
+
+.item5 {
+
+    font-family: $font-main;
+    font-size: 20px;
+    justify-self: center;
+
+    :hover{
+        transition: transform 0.5s;
+        transform: scale(1.2);
+        filter: brightness(120%);
+        color: blue;
+        background-color: steelblue;
+        border-color: blue;}
+
+    @media screen and (min-width: 768px) {
+        grid-column: 3/3;
+        grid-row: 3/5;
+        justify-self: center;
+        padding-top: 30px;      
+    }
+
+    @media screen and (min-width: 1280px){
+        font-size: 32px;
+        padding-top: 40px;
+        
     }
 
 }
@@ -25,10 +154,22 @@
     color: white;
     background-color: #f26002;
     border-radius: 50px;
-    width: 124px;
-    height: 45px;
-    margin-left: 65px;
-    margin-bottom: 10px;
+    width: 184px;
+    height: 45px; 
     
-    
+    @media screen and (min-width: 768px) {
+        width: 220px;
+        height: 50px;
+        font-size: 24px;
+        
+    }
+
+    @media screen and (min-width: 1280px){
+        width: 300px;
+        height: 60px;
+        font-size:30px;
+        
+    }
 }
+
+

@@ -7,19 +7,103 @@
     padding-top: 30px;
     padding-left: 10px;
 
+    @media screen and (min-width: 768px){
+        padding-left: 30px;
+        padding-bottom: 40px;
+        
+    }
+
+    @media screen and (min-width: 1280px){
+
+        padding-left: 275px;
+        padding-right: 275px;
+        
+    }
+
 }
 
 .insomnia{
     color: #8ccbea;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-main;
+    font-size: 14px;
+
+    @media screen and (min-width: 768px){
+        font-size: 20px;
+        
+    }
+    @media screen and (min-width: 1280px){
+        font-size: 20px;
+        
+    }
+}
+
+.looking_title {
+
+    font-family: $font-title;
+    font-size: 24px;
+
+    @media screen and (min-width: 768px){
+        font-size: 24px;
+        
+    }
+    @media screen and (min-width: 1280px){
+        font-size: 32px;
+        
+    }
+}
+.looking_parrafo { 
+
+    font-family: $font-main;
+    font-size: 16px;
+
+    @media screen and (min-width: 768px){
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 1280px){
+        font-size: 32px;
+        
+    }
+    
 }
 
 .boton {
 
+    font-family: $font-main;
+    font-size: 16px;
     border: solid 2px #f26002;
     border-radius: 50px;
     width: 45px;
     height: 25px;
     color: #f26002;
+    font-weight: bold;
     margin-bottom: 10px;
+  
+    @media screen and (min-width: 768px){
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+        
+    }
+
+    @media screen and (min-width: 1280px){
+        width: 200px;
+        height: 80px;
+        font-size: 20px;
+        
+    }
+
+}
+.go_button {
+   
+    :hover{
+        transition: transform 0.5s;
+        transform: scale(1.2);
+        filter: brightness(120%);
+        color: blue;
+        border-color: blue;
+        background-color: steelblue;
+    }
+        
+
 }

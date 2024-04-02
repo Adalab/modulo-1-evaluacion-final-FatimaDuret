@@ -5,5 +5,17 @@
     height: 22px;
     margin-top: 0%;
     margin-left: 0%;
-    position: absolute;
+    position: fixed;
+}
+
+.burguer {
+    color: white;
+    z-index: 9999;
+    margin-top: -40%;
+    margin-left: 25%;
+}
+
+.burger_link {
+    color: white;
+    text-decoration: none;
 }
