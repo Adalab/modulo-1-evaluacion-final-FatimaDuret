@@ -53,19 +53,15 @@
     font-family: $font-title;
 
    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        font-size: 55px;
+        
+       font-size: 55px;
         padding-left: 100px;
         padding-right: 100px;
         
          }
 
     @media screen and (min-width: 1280px){
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+
         font-size: 92px;
         padding-left: 275px;
         padding-right: 275px;
@@ -81,19 +77,17 @@
     padding-right: 50px;
     font-family: $font-main;
     font-size: 16px;
+    
 
 }
 
 .banner_logo {
 
-    display: flex;
-    justify-content: center;
     background-color: white;
     border: solid 2px white;
     border-radius: 50%;
     height: 37px;
     width: 37px;
-    /*margin: 40px 140px 0 140px;*/
     padding: 14px 10px 12px 11px;
   
 }
